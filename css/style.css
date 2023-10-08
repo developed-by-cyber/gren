@@ -1741,6 +1741,7 @@ form .bottom button {
   }
   .shop1 {
     padding: 10px 25px;
+    padding-bottom: 80px;
   }
   .shop1 .right .main-products .item .content .item-name {
     font-size: 14px !important;
@@ -1753,7 +1754,7 @@ form .bottom button {
   }
   .shop2 {
     padding: 50px 25px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2041,6 +2042,14 @@ form .bottom button {
 }
 .shop2 .right .coll .tops{
   margin-top: 5px !important;
+}
+.shop2 .right .collection2 .prod .item .top .month{
+  width: 40px;
+  height: 40px;
+}
+.shop2 .right .collection2 .prod .item .top .month span{
+  font-size: 11px;
+  line-height: 12px;
 }
   .Terms p {
     font-size: 14px;
