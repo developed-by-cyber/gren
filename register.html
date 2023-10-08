@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="mobile-nav mob">
+      <a href="index.html" class="log">
+        <img src="./images/Logo-le-grenier-blanc.png" alt="" />
+      </a>
+      <i class="fa fa-bars" onclick="show()"></i>
+      <div class="side-menu">
+        <div class="top">
+          <a href="index.html" class="log">
+            <img src="./images/Logo-le-grenier-blanc.png" alt="" />
+          </a>
+          <i class="fa fa-close" onclick="hide()"></i>
+        </div>
+        <div class="bottom">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Shop1.html">Shop</a></li>
+            <li><a href="#work">How It Works</a></li>
+            <li><a href="#sub">contact</a></li>
+          </ul>
+          <div class="btns">
+            <button><a href="login.html">Login</a></button>
+            <button><a href="register.html">Register</a></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="form-nav">
+      <a href="index.html" class="log">
+        <img src="./images/Logo-le-grenier-blanc.png" width="60px" alt="" />
+        <!-- <h1 class="logo">Grenier</h1> -->
+      </a>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Shop1.html">Shop</a></li>
+        <li><a href="index.html">How It Works</a></li>
+        <li><a href="index.html">contact</a></li>
+      </ul>
+      <div class="btns">
+        <button><a href="login.html">Login</a></button>
+        <button><a href="register.html">Register</a></button>
+      </div>
+    </nav>
+    <div class="form-hold">
+      <form class="register">
+        <div class="top">
+          <h4>Hello!</h4>
+          <h4>Register to get started</h4>
+        </div>
+        <div class="bottom">
+          <label for="fullname">Fullname</label>
+          <input type="text" placeholder="Enter Your Fullame" />
+
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter Your Email" />
+
+          <label for="number">Phone Number(Whatsapp Number)</label>
+          <input type="number" placeholder="Enter Your Phone Number" />
+
+          <label for="Password">Password</label>
+          <input type="password" placeholder="Enter Your Password" />
+
+          <label for="Password">Confirm Password</label>
+          <input type="password" placeholder="Confirm Your Password" />
+
+          <div class="terms">
+            <input type="checkbox" />
+            <p>Accept Terms and Condition</p>
+          </div>
+          <button type="submit">Register</button>
+          <p class="last">
+            Already have an account? <a href="login.html">Login</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

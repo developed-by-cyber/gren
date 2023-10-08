@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop1</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <div class="shop">
+    <nav class="mobile-nav mob bb">
+      <a href="index.html" class="log">
+        <img src="./images/Logo-le-grenier-blanc.png" alt="" />
+      </a>
+      <i class="fa fa-bars" onclick="show()"></i>
+      <div class="side-menu">
+        <div class="top">
+          <a href="index.html" class="log">
+            <img src="./images/Logo-le-grenier-blanc.png" alt="" />
+          </a>
+          <i class="fa fa-close" onclick="hide()"></i>
+        </div>
+        <div class="bottom">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="Shop1.html">Shop</a></li>
+            <li><a href="#work">How It Works</a></li>
+            <li><a href="#sub">contact</a></li>
+          </ul>
+          <div class="btns">
+            <button><a href="login.html">Login</a></button>
+            <button><a href="register.html">Register</a></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="form-nav foz">
+      <a href="index.html" class="log">
+        <img src="./images/Logo-le-grenier-blanc.png" width="60px" alt="" />
+        <!-- <h1 class="logo">Grenier</h1> -->
+      </a>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="Shop1.html">Shop</a></li>
+        <li><a href="index.html">How It Works</a></li>
+        <li><a href="index.html">contact</a></li>
+      </ul>
+      <div class="btns">
+        <button><a href="login.html">Login</a></button>
+        <button><a href="register.html">Register</a></button>
+      </div>
+    </nav>
+    <div class="shop1 d-flex">
+      <div class="left">
+        <h4>Infos utiles</h4>
+        <hr />
+        <h2>CATEGORIES</h2>
+        <p>
+          Nous offrons un choix de <span class="fw-bold">quatre catégories</span> de produits essentiels, nécessaires
+          pour profiter pleinement de nos services. Ces produits vous sont proposés à un tarif semi-grossiste
+          avantageux.
+        </p>
+        <h2>PRODUITS</h2>
+        <p>
+          Après avoir sélectionné les produits essentiels, vous aurez la possibilité de choisir parmi une gamme de
+          produits complémentaires.
+          Actuellement, ces produits sont disponibles au même prix que sur le marché. Le choix d'inclure ces produits
+          est entièrement facultatif.
+          I
+        </p>
+        <h2>PAIEMENTS</h2>
+        <p class="mb-0">
+          Le montant total de vos achats, y compris les frais de livraison, vous sera clairement présenté avant que vous
+          ne confirmiez votre commande. Vous aurez le choix entre deux options de paiement :
+        </p>
+        <li>Paiement via Orange Money</li>
+        <li>Paiement à la livraison</li>
+      </div>
+      <div class="right">
+        <h4>LES ESSENTIELLES</h4>
+        <hr />
+        <!-- 
+            DESKTOP PRODUCTS
+           -->
+        <div class="main-products">
+          <div class="swiper mySwiper m-auto">
+            <p class="text-center fw-bold text-decoration-underline mb-2">Riz</p>
+            <div class="swiper-wrapper">
+              <!-- ========> Rice 1 ========= -->
+              <div class="swiper-slide">
+                <div class="item it1">
+                  <div class="img-holder">
+                    <img src="./images/products/Riz-parfumé-DIMA.png" alt="">
+                  </div>
+                  <div class="content">
+                    <h6>IN STOCK</h6>
+                    <h5 class="item-name">
+                      Riz parfumé dima
+                    </h5>
+                    <div class="weig">
+                      <span class="weight">SIZE:</span>
+                      <select name="" id="">
+                        <option value="">50KG</option>
+                        <option value="">25KG</option>
+                      </select>
+                    </div>
+                      <h1 class="price"><span>31,600</span> FCFA</h1>
+                  </div>
+                </div>
+              </div>
+               <!-- ========> Rice 2 ========= -->
+              <div class="swiper-slide">
+                <div class="item it1">
+                  <div class="img-holder">
+                    <img src="./images/products/Riz-Gambiaka.png" alt="">
+                  </div>
+                  <div class="content">
+                    <h6>IN STOCK</h6>
+                    <h5 class="item-name">
+                      Riz Gambiaka
+                    </h5>
+                    <div class="weig">
+                      <span class="weight">SIZE:</span>
+                      <select name="" id="">
+                        <option value="">50KG</option>
+                        <option value="">25KG</option>
+                      </select>
+                    </div>
+                      <h1 class="price"><span>27,500</span> FCFA</h1>
+                  </div>
+                </div>
+              </div>
+               <!-- ========> Rice 3 ========= -->
+              <div class="swiper-slide">
+                <div class="item it1">
+                  <div class="img-holder">
+                    <img src="./images/products/Riz fumé Bella2.png" alt="">
+                  </div>
+                  <div class="content">
+                    <h6>IN STOCK</h6>
+                    <h5 class="item-name">
+                      Riz fumé Bella
+                    </h5>
+                    <div class="weig">
+                      <span class="weight">SIZE:</span>
+                      <select name="" id="">
+                        <option value="">50KG</option>
+                        <option value="">25KG</option>
+                      </select>
+                    </div>
+                      <h1 class="price"><span>23,750</span> FCFA</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+         <!-- ======> <======= -->
+          <div class="joined">
+            <div class="swiper mySwiper">
+              <p class="text-center fw-bold text-decoration-underline mb-2">HUILE</p>
+              <!-- =======> oil1 <======= -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-holder">
+                      <img src="./images/products/Huile-Dinor2.png" alt="">
+                    </div>
+                    <div class="content">
+                      <h6>IN STOCK</h6>
+                      <h5 class="item-name">
+                        Huile Dinor
+                      </h5>
+                      <div class="weig">
+                        <span class="weight">SIZE:</span>
+                        <select name="" id="">
+                          <option value="">20L</option>
+                          <option value="">10L</option>
+                        </select>
+                      </div>
+                        <h1 class="price"><span>21,500</span> FCFA</h1>
+                    </div>
+                  </div>
+                </div>
+                  <!-- =======> oil2 <======= -->
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-holder">
+                      <img src="./images/products/Huile Nada.png" alt="">
+                    </div>
+                    <div class="content">
+                      <h6>IN STOCK</h6>
+                      <h5 class="item-name">
+                        Huile Nada
+                      </h5>
+                      <div class="weig">
+                        <span class="weight">SIZE:</span>
+                        <select name="" id="">
+                          <option value="">20L</option>
+                          <option value="">10L</option>
+                        </select>
+                      </div>
+                        <h1 class="price"><span>22,000</span> FCFA</h1>
+                    </div>
+                  </div>
+                </div>
+                  <!-- =======> oil3 <======= -->
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-holder">
+                      <img src="./images/products/Huile Aya.png" style="width: 45%;">
+                    </div>
+                    <div class="content">
+                      <h6>IN STOCK</h6>
+                      <h5 class="item-name">
+                        Huile Aya
+                      </h5>
+                      <div class="weig">
+                        <span class="weight">SIZE:</span>
+                        <select name="" id="">
+                          <option value="">20L</option>
+                          <option value="">5L</option>
+                        </select>
+                      </div>
+                        <h1 class="price"><span>7000</span> FCFA</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="swiper mySwiper">
+              <p class="text-center fw-bold text-decoration-underline mb-2">LAIT</p>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-holder">
+                      <img src="./images/products/nido3.png" alt="">
+                    </div>
+                    <div class="content">
+                      <h6>IN STOCK</h6>
+                      <h5 class="item-name">
+                        NIDO
+                      </h5>
+                      <div class="weig">
+                        <span class="weight">SIZE:</span>
+                        <select name="" id="">
+                          <option value="">900G</option>
+                          <option value="">250G</option>
+                        </select>
+                      </div>
+                        <h1 class="price"><span>6,500</span> FCFA</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-holder">
+                      <img src="./images/products/mixwell-900g.png" alt="">
+                    </div>
+                    <div class="content">
+                      <h6>IN STOCK</h6>
+                      <h5 class="item-name">
+                        Mixwell
+                      </h5>
+                      <div class="weig">
+                        <span class="weight">SIZE:</span>
+                        <select name="" id="">
+                          <option value="">900G</option>
+                          <option value="">200G</option>
+                        </select>
+                      </div>
+                        <h1 class="price"><span>1,300</span> FCFA</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-holder">
+                      <img src="./images/products/Belle-Hollandaise-2500g 1 (1).png" alt="">
+                    </div>
+                    <div class="content">
+                      <h6>IN STOCK</h6>
+                      <h5 class="item-name">
+                        Belle Hollandaise
+                      </h5>
+                      <div class="weig">
+                        <span class="weight">SIZE:</span>
+                        <select name="" id="">
+                          <option value="">24pcs</option>
+                        </select>
+                      </div>
+                        <h1 class="price"><span>36,000</span> FCFA</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="swiper mySwiper m-auto">
+            <p class="text-center fw-bold text-decoration-underline mb-2">SUCRE</p>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item it1">
+                  <div class="img-holder">
+                    <img src="./images/products/sugar-4.png" alt="" style="width: 75%;">
+                  </div>
+                  <div class="content">
+                    <h6>IN STOCK</h6>
+                    <h5 class="item-name">
+                       Sucre St Louis
+                    </h5>
+                    <div class="weig">
+                      <span class="weight">SIZE:</span>
+                      <select name="" id="">
+                        <option value="">24PCS</option>
+                        <!-- <option value="">25KG</option> -->
+                      </select>
+                    </div>
+                      <h1 class="price"><span>36,000</span> FCFA</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item it1">
+                  <div class="img-holder">
+                    <img src="./images/products/sugar4.png" alt="" style="width: 75%;">
+                  </div>
+                  <div class="content">
+                    <h6>IN STOCK</h6>
+                    <h5 class="item-name">
+                      Sucre blanc
+                    </h5>
+                    <div class="weig">
+                      <span class="weight">SIZE:</span>
+                      <select name="" id="">
+                        <option value="">50KG</option>
+                        <option value="">25KG</option>
+                      </select>
+                    </div>
+                      <h1 class="price"><span>32,200</span> FCFA</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item it1">
+                  <div class="img-holder">
+                    <img src="./images/products/sugar3.png" alt="" style="width: 65%;">
+                  </div>
+                  <div class="content">
+                    <h6>IN STOCK</h6>
+                    <h5 class="item-name">
+                      Sucre SUKALA
+                    </h5>
+                    <div class="weig">
+                      <span class="weight">SIZE:</span>
+                      <select name="" id="">
+                        <option value="">50KG</option>
+                        <option value="">25KG</option>
+                        <!-- <option value="">25KG</option> -->
+                      </select>
+                    </div>
+                      <h1 class="price"><span>37,000</span> FCFA</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <p class="tot">TOTAL: <span class="total">320,000 FCFA</span></p>
+        <div class="bbb w-100 d-flex justify-content-center">
+          <button class="submit"><a href="Shop2.html">suivant</a></button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-hold">
+        <div class="left">
+          <a href="index.html" class="log">
+            <img src="./images/Logo-le-grenier-blanc.png" width="60px" alt="" />
+          </a>
+          <ul class="nav-list">
+            <li><a class="active" href="#a">Home</a></li>
+            <li><a href="#a">Shop</a></li>
+            <li><a href="#work">How It Works</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="Terms.html">Terms and condition</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <p>TEL: <span>+22375236523</span></p>
+          <p>EMAIL: <span>info@legrenier.com</span></p>
+          <p><span>Hamdallaye ACI 2000,</span></p>
+          <p><span>pres de Bougie BA, Bp:240</span></p>
+        </div>
+      </div>
+      <hr />
+      <div class="social">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-twitter"></i>
+      </div>
+    </footer>
+    <button onclick="helps()" id="help" class="help">?</button>
+    <script src="./js/script.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
