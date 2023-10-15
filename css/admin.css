@@ -343,6 +343,9 @@ section h1{
     width: 100%;
     border: none !important;
 }
+.settings{
+  margin-bottom: 90px;
+}
 .settings .set{
   min-width: 400px;
   width: fit-content;
