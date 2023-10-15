@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon (2).ico" />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+  </head>
+  <body id="body">
+    <header>
+      <div class="icon__menu">
+        <i class="fa fa-bars" id="btn_open"></i>
+      </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+      <a href="/">
+        <div class="name__page">
+          <img
+            src="./images/logo-final-grenier 1 (1).png"
+            width="500px"
+            alt=""
+          />
+          <h4 class="log">Grenier</h4>
+        </div>
+      </a>
+
+      <div class="options__menu">
+        <a href="#" class="links selected">
+          <div class="option">
+            <i class="fa fa-home" title="Dashboard"></i>
+            <h4>Dashboard</h4>
+          </div>
+        </a>
+
+        <a href="#user" class="links">
+          <div class="option">
+            <i class="fa fa-user" title="Users"></i>
+            <h4>Users</h4>
+          </div>
+        </a>
+
+        <a href="#orders" class="links">
+          <div class="option">
+            <i class="fa fa-shopping-cart" title="Orders"></i>
+            <h4>Orders</h4>
+          </div>
+        </a>
+
+        <a href="/Shop1.html" class="links">
+          <div class="option">
+            <i class="fa fa-shopping-basket" title="Shop"></i>
+            <h4>Shop</h4>
+          </div>
+        </a>
+
+        <a href="#settings" class="links">
+          <div class="option">
+            <i class="fa fa-gear" title="Setting"></i>
+            <h4>Settings</h4>
+          </div>
+        </a>
+
+        <a href="/" class="last links">
+          <div class="option">
+            <i class="fa fa-sign-out" title="Logout"></i>
+            <h4>logout</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <section class="dashboard-home">
+        <div class="wallet">
+          <div class="wall-top">
+            <i class="fa fa-dollar dos"></i>
+            <h1>Revenue</h1>
+          </div>
+          <div class="wall-bottom">
+            <h1><span>10.000 </span> FCFA</h1>
+          </div>
+        </div>
+        <div class="wallet">
+          <div class="wall-top">
+            <i class="fa fa-user"></i>
+            <h1>Users</h1>
+          </div>
+          <div class="wall-bottom">
+            <h1>100</h1>
+          </div>
+        </div>
+        <div class="wallet">
+          <div class="wall-top">
+            <i class="fa fa-shopping-bag"></i>
+            <h1>Orders</h1>
+          </div>
+          <div class="wall-bottom">
+            <h1>100</h1>
+          </div>
+        </div>
+        <div class="wallet">
+          <div class="wall-top">
+            <i class="fa fa-shopping-bag"></i>
+            <h1>Delivered</h1>
+          </div>
+          <div class="wall-bottom">
+            <h1>0</h1>
+          </div>
+        </div>
+      </section>
+      <section class="users" id="user">
+        <h1>All Users</h1>
+        <div class="table-responsive text-nowrap">
+          <table class="table table-striped align-middle">
+            <thead class="head">
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>address</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Ebuka Daniel Ibekwe</td>
+                <td>+2348022433849</td>
+                <td>danielibekwe222@gmail.com</td>
+                <td>23 Okigwe road</td>
+                <td>
+                  <button class="btn btn-danger">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Ebuka Daniel Ibekwe</td>
+                <td>+2348022433849</td>
+                <td>danielibekwe222@gmail.com</td>
+                <td>23 Okigwe road</td>
+                <td>
+                  <button class="btn btn-danger">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Ebuka Daniel Ibekwe</td>
+                <td>+2348022433849</td>
+                <td>danielibekwe222@gmail.com</td>
+                <td>23 Okigwe road</td>
+                <td>
+                  <button class="btn btn-danger">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Ebuka Daniel Ibekwe</td>
+                <td>+2348022433849</td>
+                <td>danielibekwe222@gmail.com</td>
+                <td>23 Okigwe road</td>
+                <td>
+                  <button class="btn btn-danger">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="orders" id="orders">
+        <h1>All Orders</h1>
+        <div class="table-responsive text-nowrap">
+          <table class="table table-striped align-middle">
+            <thead class="head">
+              <tr>
+                <th>User</th>
+                <th>Order image</th>
+                <th>Product Names</th>
+                <th>Date</th>
+                <th>Payment Method</th>
+                <th>Delivery Status</th>
+                <th>Shipping Address</th>
+                <th>Total</th>
+                <th>Option</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ebuka daniel ibekwe</td>
+                <td>
+                  <div class="img-hold">
+                    <img src="./images/products/BAMA.png" alt="" />
+                    <img src="./images/products/Huile-Dinor2.png" alt="" />
+                    <img src="./images/products/Cerelac dès2.png" alt="" />
+                    <img src="./images/products/Confy N°2 .png" alt="" />
+                  </div>
+                </td>
+                <td class="product-name">
+                  <p>
+                    BAMA <span class="weight">50KG</span>
+                    <span class="quantity">(5)</span>
+                  </p>
+                  <p>
+                    Huile-Dinor <span class="weight">20L</span>
+                    <span class="quantity">(2)</span>
+                  </p>
+                  <p>
+                    cerelac <span class="weight">20L</span>
+                    <span class="quantity">(2)</span>
+                  </p>
+                  <p>Confy N°2 <span class="quantity">(2)</span></p>
+                </td>
+                <td>Oct 22, 2023</td>
+                <td>Cash on delivery</td>
+                <td>
+                  <p class="pending">Pending</p>
+                </td>
+                <td>22, damacus road aba</td>
+                <td class="total">
+                  <p>23,000</p>
+                </td>
+                <td class="option">
+                  <button class="btn btn-success me-2">
+                    <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn btn-danger">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Ebuka daniel ibekwe</td>
+                <td>
+                  <div class="img-hold">
+                    <img src="./images/products/BAMA.png" alt="" />
+                    <img src="./images/products/Huile-Dinor2.png" alt="" />
+                    <img src="./images/products/Cerelac dès2.png" alt="" />
+                  </div>
+                </td>
+                <td class="product-name">
+                  <p>
+                    BAMA <span class="weight">50KG</span>
+                    <span class="quantity">(5)</span>
+                  </p>
+                  <p>
+                    Huile-Dinor <span class="weight">20L</span>
+                    <span class="quantity">(2)</span>
+                  </p>
+                  <p>
+                    cerelac <span class="weight">20L</span>
+                    <span class="quantity">(2)</span>
+                  </p>
+                </td>
+                <td>Oct 22, 2023</td>
+                <td>Cash on delivery</td>
+                <td>
+                  <p class="delivered">Delivered</p>
+                </td>
+                <td>22, damacus road aba</td>
+                <td class="total">
+                  <p>23,000</p>
+                </td>
+                <td class="option">
+                  <button class="btn btn-danger">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Ebuka daniel ibekwe</td>
+                <td>
+                  <div class="img-hold">
+                    <img src="./images/products/BAMA.png" alt="" />
+                    <img src="./images/products/Huile-Dinor2.png" alt="" />
+                    <img src="./images/products/Cerelac dès2.png" alt="" />
+                  </div>
+                </td>
+                <td class="product-name">
+                  <p>
+                    BAMA <span class="weight">50KG</span>
+                    <span class="quantity">(5)</span>
+                  </p>
+                  <p>
+                    Huile-Dinor <span class="weight">20L</span>
+                    <span class="quantity">(2)</span>
+                  </p>
+                  <p>
+                    cerelac <span class="weight">20L</span>
+                    <span class="quantity">(2)</span>
+                  </p>
+                </td>
+                <td>Oct 22, 2023</td>
+                <td>Cash on delivery</td>
+                <td>
+                  <p class="pending">Pending</p>
+                </td>
+                <td>22, damacus road aba</td>
+                <td class="total">
+                  <p>23,000</p>
+                </td>
+                <td class="option">
+                  <button class="btn btn-success me-2">
+                    <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn btn-danger">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section section class="settings" id="settings">
+        <h1>Settings</h1>
+        <div class="set">
+          <div class="each d-flex justify-content-between align-items-center flex-wrap mb-4">
+            <div class="holds">
+              <label class="fw-medium" for="">Email</label>
+              <p class="mb-0 fw-bold">daneilibekwe222@gmail.com</p>
+            </div>
+            <button
+              class="btn btn-primary btn22"
+              data-bs-toggle="modal"
+              data-bs-target="#Mod1"
+            >
+              Edit
+            </button>
+            <!-- modal -->
+            <div
+              class="modal fade"
+              id="Mod1"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Edit Email
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <input type="text" value="daneilibekwe222@gmail.com" />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary btn22">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="each d-flex justify-content-between align-items-center flex-wrap">
+            <div class="holds">
+              <label class="fw-medium" for="">Password</label>
+              <p class="mb-0 fw-bold">***********</p>
+            </div>
+            <button class="btn btn-primary btn22" data-bs-toggle="modal" data-bs-target="#Mod4">Change</button>
+            <!-- modal -->
+            <div class="modal fade" id="Mod4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Change Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <input type="text" placeholder="Old Password">
+                    <input type="text" placeholder="New Password">
+                    <input type="text" placeholder="Confirm Password">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn22">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      let links = document.querySelectorAll(".links");
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          document.querySelector(".selected")?.classList.remove("selected");
+          link.classList.add("selected");
+        });
+      });
+      console.log(links);
+    </script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/admin.js"></script>
+  </body>
+</html>

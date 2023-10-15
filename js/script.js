@@ -41,32 +41,5 @@ function helps2() {
 }
 
 // Quantity Function
-let quns = document.querySelectorAll(".qun");
-// let qunss = document.querySelectorAll(".quns");
-let addBtn = document.querySelectorAll(".addBtn");
-let subBtn = document.querySelectorAll(".subBtn");
 
-// qunss.forEach((qun) => {
-//   qun.addEventListener("input", resizeInput);
-//   resizeInput.call(qun);
-// });
-
-// function resizeInput() {
-//   this.style.width = this.value.length + "ch";
-// }
-
-
-addBtn.forEach((adds, index) => {
-  adds.addEventListener("click", () => {
-    quns[index].value = parseInt(quns[index].value) + 1;
-  });
-});
-
-subBtn.forEach((subs, index) => {
-  subs.addEventListener("click", () => {
-    if (quns[index].value > 1) {
-      quns[index].value = parseInt(quns[index].value) - 1;
-    }
-  });
-});
 

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon (2).ico" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="mods">
+      <i onclick="closer()" class="fa fa-times-circle"></i>
+      <h1>Order Completed</h1>
+      <button onclick="closer()" class="btn">Confirm</button>
+    </div>
+    <div class="checkout">
+      <div class="top">
+        <div class="back">
+          <a href="/Shop1.html" class="back">
+            <i class="fa fa-chevron-left"></i>
+          <h4>Back</h4>
+          </a>
+        </div>
+        <h1>Check Out</h1>
+      </div>
+      <div class="check">
+       <div class="hols">
+        <div class="ex">
+          <h2 class="top-text">LES ESSENTIELLES</h2>
+        <table class="table first">
+          <thead class="head">
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th class="close-th"></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Name" class="product-name">
+                <div class="product-image">
+                  <img src="./images/products/Huile-Dinor2.png"/>
+                </div>
+                <p class="name mb-0">Huile Dinor <span class="weight" style="font-size: 13px;">(20L)</span></p>
+              </td>
+              <td data-label="price"><span>3400</span> FCFA</td>
+              <td data-label="Quantity">
+                <div class="quantity">
+                  <i class="fa fa-minus subBtn"></i>
+                  <input
+                    class="qun quns"
+                    type="text"
+                    name=""
+                    value="1"
+                    min="1"
+                    readonly
+                  />
+                  <i class="fa fa-plus addBtn add-btn"></i>
+                </div>
+              </td>
+              <td data-label="Subtotal"><span>3400</span> FCFA</td>
+              <td class="last-close"><i class="fa fa-close close" aria-hidden="true"></i></td>
+            </tr>
+            <tr>
+              <td data-label="Name" class="product-name">
+                <div class="product-image">
+                  <img src="./images/products/Riz fumé Bella2.png"/>
+                </div>
+                <p class="name">Riz fumé <span class="weight" style="font-size: 13px;">(30KG)</span></p>
+              </td>
+              <td data-label="price"><span>3400</span> FCFA</td>
+              <td data-label="Quantity">
+                <div class="quantity">
+                  <i class="fa fa-minus subBtn"></i>
+                  <input
+                    class="qun quns"
+                    type="text"
+                    name=""
+                    value="1"
+                    min="1"
+                    readonly
+                  />
+                  <i class="fa fa-plus addBtn add-btn"></i>
+                </div>
+              </td>
+              <td data-label="Subtotal"><span>3400</span> FCFA</td>
+              <td class="last-close"><i class="fa fa-close close" aria-hidden="true"></i></td>
+            </tr>
+            <tr>
+              <td data-label="Name" class="product-name">
+                <div class="product-image">
+                  <img src="./images/products/nido1.png"/>
+                </div>
+                <p class="name">nido <span class="weight" style="font-size: 13px;">(2500G)</span></p>
+              </td>
+              <td data-label="price"><span>3400</span> FCFA</td>
+              <td data-label="Quantity">
+                <div class="quantity">
+                  <i class="fa fa-minus subBtn"></i>
+                  <input
+                    class="qun quns"
+                    type="text"
+                    name=""
+                    value="1"
+                    min="1"
+                    readonly
+                  />
+                  <i class="fa fa-plus addBtn add-btn"></i>
+                </div>
+              </td>
+              <td data-label="Subtotal"><span>3400</span> FCFA</td>
+              <td class="last-close"><i class="fa fa-close close" aria-hidden="true"></i></td>
+            </tr>
+            <tr>
+              <td data-label="Name" class="product-name">
+                <div class="product-image">
+                  <img src="./images/products/sugar1.png"/>
+                </div>
+                <p class="name">Sucre<span class="weight" style="font-size: 13px;">(X24)</span></p>
+              </td>
+              <td data-label="price"><span>3400</span> FCFA</td>
+              <td data-label="Quantity">
+                <div class="quantity">
+                  <i class="fa fa-minus subBtn"></i>
+                  <input
+                    class="qun quns"
+                    type="text"
+                    name=""
+                    value="1"
+                    min="1"
+                    readonly
+                  />
+                  <i class="fa fa-plus addBtn add-btn"></i>
+                </div>
+              </td>
+              <td data-label="Subtotal"><span>3400</span> FCFA</td>
+              <td class="last-close"><i class="fa fa-close close" aria-hidden="true"></i></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+       <div class="ex">
+        <h2 class="top-text">LES COMPLEMENTS</h2>
+        <table class="table second">
+          <thead class="head">
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th class="close-th"></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Name" class="product-name">
+                <div class="product-image">
+                  <img src="./images/products/BAMA.png"/>
+                </div>
+                <p class="name">BAMA <span class="weight" style="font-size: 13px;">(30KG)</span></p>
+              </td>
+              <td data-label="price"><span>3400</span> FCFA</td>
+              <td data-label="Quantity">
+                <div class="quantity">
+                  <i class="fa fa-minus subBtn"></i>
+                  <input
+                    class="qun quns"
+                    type="text"
+                    name=""
+                    value="1"
+                    min="1"
+                    readonly
+                  />
+                  <i class="fa fa-plus addBtn add-btn"></i>
+                </div>
+              </td>
+              <td data-label="Subtotal"><span>3400</span> FCFA</td>
+              <td class="last-close"><i class="fa fa-close close" aria-hidden="true"></i></td>
+            </tr>
+            <tr>
+              <td data-label="Name" class="product-name">
+                <div class="product-image">
+                  <img src="./images/products/Cerelac dès2.png"/>
+                </div>
+                <p class="name">Cerelac</p>
+              </td>
+              <td data-label="price"><span>3400</span> FCFA</td>
+              <td data-label="Quantity">
+                <div class="quantity">
+                  <i class="fa fa-minus subBtn"></i>
+                  <input
+                    class="qun quns"
+                    type="text"
+                    name=""
+                    value="1"
+                    min="1"
+                    readonly
+                  />
+                  <i class="fa fa-plus addBtn add-btn"></i>
+                </div>
+              </td>
+              <td data-label="Subtotal"><span>3400</span> FCFA</td>
+              <td class="last-close"><i class="fa fa-close close" aria-hidden="true"></i></td>
+            </tr>
+            <tr>
+              <td data-label="Name" class="product-name">
+                <div class="product-image">
+                  <img src="./images/products/Confy N°2 .png"/>
+                </div>
+                <p class="name">Confy N°2</p>
+              </td>
+              <td data-label="price"><span>3400</span> FCFA</td>
+              <td data-label="Quantity">
+                <div class="quantity">
+                  <i class="fa fa-minus subBtn"></i>
+                  <input
+                    class="qun quns"
+                    type="text"
+                    name=""
+                    value="1"
+                    min="1"
+                    readonly
+                  />
+                  <i class="fa fa-plus addBtn add-btn"></i>
+                </div>
+              </td>
+              <td data-label="Subtotal"><span>3400</span> FCFA</td>
+              <td class="last-close"><i class="fa fa-close close" aria-hidden="true"></i></td>
+            </tr>
+          </tbody>
+        </table>
+       </div>
+       </div>
+        <div class="checkout-total">
+            <div class="checkouts">
+                <h2>Checkout Total</h2>
+                <div class="total-hold">
+                    <table border="1" style="border-collapse: collapse;">
+                        <tr>
+                            <th>Subtotal</th>
+                            <td><span>2500</span>FCFA</td>
+                        </tr>
+                        <tr>
+                            <th>Shipping</th>
+                            <td>
+                                <label for="loaction">Select your delivery location</label><br>
+                                <select name="" id="">
+                                    <option value="">Choose Address</option>
+                                    <option value="">Au bureau</option>
+                                    <option value="">ATTbougou</option>
+                                    <option value="">Baco-Djicoroni</option>
+                                    <option value="">Baco-Djicoroni GOLF</option>
+                                    <option value="">Badalabougou</option>
+                                    <option value="">Badialan</option>
+                                    <option value="">Bagadadji</option>
+                                    <option value="">Bakaribougou</option>
+                                    <option value="">Banankabougou</option>
+                                    <option value="">Bougouba</option>
+                                    <option value="">Boulkassoumbougou</option>
+                                    <option value="">Bozola</option>
+                                    <option value="">Daoudabougou</option>
+                                    <option value="">Djanékéla</option>
+                                    <option value="">Djicoroni Para</option>
+                                    <option value="">Doumanzana</option>
+                                    <option value="">Faladié</option>
+                                    <option value="">Garantibougou</option>
+                                    <option value="">Hamdallaye</option>
+                                    <option value="">Hippodrome</option>
+                                    <option value="">Kabala</option>
+                                    <option value="">Kalabambougou</option>
+                                    <option value="">Kalaban-Coura</option>
+                                    <option value="">Kalaban-Koro</option>
+                                    <option value="">Korofina</option>
+                                    <option value="">Lafiabougou</option>
+                                    <option value="">Magnambougou</option>
+                                    <option value="">Médina-coura</option>
+                                    <option value="">Missabougou</option>
+                                    <option value="">Missira</option>
+                                    <option value="">Moribabougou</option>
+                                    <option value="">N'tomikorobougou</option>
+                                    <option value="">Niamakoro</option>
+                                    <option value="">Niamana</option>
+                                    <option value="">Niaréla</option>
+                                    <option value="">Quartier Mali</option>
+                                    <option value="">Quinzambougou</option>
+                                    <option value="">Sabalibougou</option>
+                                    <option value="">Samè</option>
+                                    <option value="">Sébénikoro</option>
+                                    <option value="">Sénou</option>
+                                    <option value="">Sirakoro</option>
+                                    <option value="">Sogoniko </option>
+                                    <option value="">Sokorodji</option>
+                                    <option value="">Taliko</option>
+                                    <option value="">Tiebani</option>
+                                    <option value="">Titibougou</option>
+                                    <option value="">Torokorobougou</option>
+                                    <option value="">TSF</option>
+                                    <option value="">Yirimadio</option>
+                                    <option value="">Zone industrielle</option>
+                                </select>
+                                <p class="res">Price: <span class="price">500 FCFA</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                        <th>Payment</th>
+                        <td>
+                          <label for="loaction">Select payment method</label><br>
+                                <select name="" id="">
+                                    <option value="">select Payment</option>
+                                    <option value="">Orange Money</option>
+                                    <option value="">Payment on delivery</option>
+                                </select>
+                        </td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <td><span>23,500</span>FCFA</td>
+                        </tr>
+                    </table>
+                    <button onclick="opener()">Checkout</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let quns = document.querySelectorAll(".qun");
+      let addBtn = document.querySelectorAll(".addBtn");
+      let subBtn = document.querySelectorAll(".subBtn");
+
+      addBtn.forEach((adds, index) => {
+        adds.addEventListener("click", () => {
+          quns[index].value = parseInt(quns[index].value) + 1;
+        });
+      });
+
+      subBtn.forEach((subs, index) => {
+        subs.addEventListener("click", () => {
+          if (quns[index].value > 1) {
+            quns[index].value = parseInt(quns[index].value) - 1;
+          }
+        });
+      });
+
+      let mod = document.querySelector(".mods");
+      let overlay = document.querySelector(".overlay");
+      function opener(){
+        mod.classList.add('open');
+        overlay.style.display = "block";
+      }
+      function closer(){
+        mod.classList.remove('open');
+        overlay.style.display = "none";
+      }
+    </script>
+    <!-- <script src="./js/script.js"></script> -->
+    <!-- <script src="./js/bootstrap.bundle.js"></script> -->
+  </body>
+</html>
