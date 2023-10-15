@@ -1674,7 +1674,7 @@ form .bottom button {
     height: fit-content;
   }
   .table .quantity {
-    width: 50%;
+    /* width: 50%; */
   }
 }
 
